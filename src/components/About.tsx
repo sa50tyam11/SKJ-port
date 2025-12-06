@@ -1,4 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
+import satyamPhoto from "@/assets/satyam-photo.jpg";
 
 const values = [
   "Pixel-perfect attention to detail",
@@ -17,21 +18,12 @@ const About = () => {
           {/* Image / Visual */}
           <div className="relative">
             <div className="aspect-square max-w-md mx-auto lg:mx-0 rounded-3xl overflow-hidden bg-gradient-to-br from-accent/20 to-primary/10 p-1">
-              <div className="w-full h-full rounded-[calc(1.5rem-4px)] bg-card flex items-center justify-center relative overflow-hidden">
-                {/* Abstract design pattern */}
-                <div className="absolute inset-0 opacity-10">
-                  <div className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-accent" />
-                  <div className="absolute bottom-1/4 right-1/4 w-48 h-48 rounded-full bg-primary" />
-                  <div className="absolute top-1/2 left-1/2 w-24 h-24 rounded-full bg-accent/50" />
-                </div>
-                
-                {/* Initials or avatar placeholder */}
-                <div className="relative z-10 text-center">
-                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-accent to-accent/60 flex items-center justify-center mb-4 mx-auto shadow-glow">
-                    <span className="text-4xl font-bold text-accent-foreground">JD</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">Frontend Developer</p>
-                </div>
+              <div className="w-full h-full rounded-[calc(1.5rem-4px)] overflow-hidden">
+                <img 
+                  src={satyamPhoto} 
+                  alt="Satyam Kumar Jha" 
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
             </div>
             
