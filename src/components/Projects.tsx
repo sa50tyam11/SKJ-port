@@ -10,7 +10,8 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&h=600&fit=crop",
     color: "from-pink-500/20 to-rose-500/20",
-    link: "https://github.com/sa50tyam11/Cake-Shop",
+    github: "https://github.com/sa50tyam11/Cake-Shop",
+    demo: "https://sa50tyam11.github.io/Cake-Shop/",
   },
   {
     title: "Web Service Platform",
@@ -20,7 +21,8 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
     color: "from-blue-500/20 to-cyan-500/20",
-    link: "https://github.com/sa50tyam11/web-service-platform",
+    github: "https://github.com/sa50tyam11/web-service-platform",
+    demo: "https://sa50tyam11.github.io/web-service-platform/",
   },
   {
     title: "BCA Grade Calculator",
@@ -30,7 +32,8 @@ const projects = [
     tech: ["JavaScript", "HTML", "CSS"],
     image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop",
     color: "from-green-500/20 to-emerald-500/20",
-    link: "https://github.com/sa50tyam11/BCA-grade-calculator",
+    github: "https://github.com/sa50tyam11/BCA-grade-calculator",
+    demo: "https://sa50tyam11.github.io/BCA-grade-calculator/",
   },
   {
     title: "BMI Calculator",
@@ -40,7 +43,8 @@ const projects = [
     tech: ["JavaScript", "CSS", "HTML"],
     image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
     color: "from-amber-500/20 to-orange-500/20",
-    link: "https://github.com/sa50tyam11/BMI-calculator",
+    github: "https://github.com/sa50tyam11/BMI-calculator",
+    demo: "https://sa50tyam11.github.io/BMI-calculator/",
   },
 ];
 
@@ -114,12 +118,20 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="sm" className="group/btn">
-                    View Project
-                    <ArrowUpRight className="w-4 h-4 ml-1 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
-                  </Button>
-                </a>
+                <div className="flex flex-wrap gap-3">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm" className="group/btn">
+                      View Project
+                      <ArrowUpRight className="w-4 h-4 ml-1 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
+                    </Button>
+                  </a>
+                  <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                    <Button variant="accent" size="sm" className="group/btn">
+                      Live Demo
+                      <ExternalLink className="w-4 h-4 ml-1" />
+                    </Button>
+                  </a>
+                </div>
               </div>
             </article>
           ))}
