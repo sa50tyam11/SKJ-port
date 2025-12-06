@@ -1,10 +1,9 @@
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+  { icon: Github, href: "https://github.com/sa50tyam11", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/satyamkrjha5011", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:satyamkrjha@example.com", label: "Email" },
 ];
 
 const Footer = () => {

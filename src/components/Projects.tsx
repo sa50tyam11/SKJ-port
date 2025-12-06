@@ -3,40 +3,44 @@ import { ArrowUpRight, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "FinFlow Dashboard",
-    type: "Web Application",
-    problem: "Complex financial data needed intuitive visualization",
-    solution: "Built a real-time dashboard with interactive charts and clean UX",
-    tech: ["React", "TypeScript", "Tailwind", "Chart.js"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    color: "from-blue-500/20 to-purple-500/20",
-  },
-  {
-    title: "Luxe Properties",
+    title: "Cake Shop",
     type: "Business Website",
-    problem: "Real estate agency needed premium online presence",
-    solution: "Designed a sophisticated, image-focused property showcase",
-    tech: ["Next.js", "Framer Motion", "Sanity CMS"],
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-    color: "from-amber-500/20 to-orange-500/20",
+    problem: "Local bakery needed an attractive online presence",
+    solution: "Built a visually appealing frontend showcasing products and services",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&h=600&fit=crop",
+    color: "from-pink-500/20 to-rose-500/20",
+    link: "https://github.com/sa50tyam11/Cake-Shop",
   },
   {
-    title: "FitPro Tracker",
-    type: "Web App",
-    problem: "Fitness enthusiasts needed simple workout logging",
-    solution: "Created an intuitive mobile-first tracking application",
-    tech: ["React", "Node.js", "MongoDB", "PWA"],
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+    title: "Web Service Platform",
+    type: "Web Application",
+    problem: "Businesses needed a modern service showcase platform",
+    solution: "Created a clean, professional web platform with intuitive navigation",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+    color: "from-blue-500/20 to-cyan-500/20",
+    link: "https://github.com/sa50tyam11/web-service-platform",
+  },
+  {
+    title: "BCA Grade Calculator",
+    type: "Web Tool",
+    problem: "Students needed quick grade calculations",
+    solution: "Built an interactive calculator with clean UI for grade computation",
+    tech: ["JavaScript", "HTML", "CSS"],
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop",
     color: "from-green-500/20 to-emerald-500/20",
+    link: "https://github.com/sa50tyam11/BCA-grade-calculator",
   },
   {
-    title: "Artisan Coffee Co.",
-    type: "E-commerce",
-    problem: "Local roastery wanted to sell subscriptions online",
-    solution: "Built a conversion-optimized store with subscription system",
-    tech: ["Shopify", "Liquid", "JavaScript", "Stripe"],
-    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=600&fit=crop",
-    color: "from-stone-500/20 to-amber-500/20",
+    title: "BMI Calculator",
+    type: "Web Tool",
+    problem: "Users needed a simple health tracking tool",
+    solution: "Created a responsive BMI calculator with instant results",
+    tech: ["JavaScript", "CSS", "HTML"],
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+    color: "from-amber-500/20 to-orange-500/20",
+    link: "https://github.com/sa50tyam11/BMI-calculator",
   },
 ];
 
@@ -110,10 +114,12 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <Button variant="outline" size="sm" className="group/btn">
-                  View Project
-                  <ArrowUpRight className="w-4 h-4 ml-1 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
-                </Button>
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="sm" className="group/btn">
+                    View Project
+                    <ArrowUpRight className="w-4 h-4 ml-1 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
+                  </Button>
+                </a>
               </div>
             </article>
           ))}
