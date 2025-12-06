@@ -31,7 +31,7 @@ const Header = () => {
     >
       <div className="container-custom flex items-center justify-between">
         <a href="#" className="text-xl font-bold tracking-tight">
-          <span className="text-foreground">dev</span>
+          <span className="text-foreground">SKJ</span>
           <span className="gradient-text">.</span>
         </a>
 
